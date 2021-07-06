@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>{{ title }}</title>
+</head>
+<body>
+  {% include "header.njk" %}
+
+  <main>
+    {% block snippet1 %}
+      Some default snippet 1 text
+    {% endblock %}
+
+    <div class="grid-wrapper">
+      {% block snippet2 %}
+        Some default snippet 2 text
+      {% endblock %}
+    </div>
+  </main>
+
+</body>
+</html>
