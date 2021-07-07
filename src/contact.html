@@ -1,13 +1,31 @@
 ---
 title: CoNtAcT
+description: >
+  Check out https://11ty.dev for more great tips!
 ---
 
 {%- extends "layouts/page.njk" -%}
 
 {% block snippet1 %}
   <p>Here, I write a {{ title }} introduction or whatever&hellip;</p>
+  <blockquote>
+    {{ description | md | safe }}
+  </blockquote>
 {% endblock %}
 
 {% block snippet2 %}
   <p>Continuing the {{ title }} writing, I wax on, poetically, of course&hellip;</p>
+
+  {% md %}
+    This is some *markdown*, now with __things__!
+
+    1. one
+    1. two
+    1. three
+
+    - unordered 1
+    - unordered 2
+
+    ![foo](/bar.webp)
+  {% endmd %}
 {% endblock %}

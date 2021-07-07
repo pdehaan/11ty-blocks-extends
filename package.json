@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "dedent": "^0.7.0",
     "del": "^6.0.0"
   },
   "devDependencies": {
