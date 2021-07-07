@@ -1,6 +1,5 @@
 ---
 title: AbOuT
-templateEngineOverride: njk,md
 ---
 
 {%- extends "layouts/page.njk" -%}

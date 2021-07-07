@@ -7,7 +7,8 @@
     "url": "https://github.com/pdehaan/11ty-blocks-extends/issues"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "del": "^6.0.0"
   },
   "devDependencies": {
     "prettier": "^2.3.2"
@@ -22,6 +23,6 @@
   },
   "scripts": {
     "build": "eleventy",
-    "postbuild": "prettier www --write"
+    "pretty:www": "prettier www --write"
   }
 }
